@@ -106,6 +106,7 @@ const AdminRegistrationForm = ({ onSuccess }) => {
           password: trimmedFormData.password,
           secretKey: trimmedFormData.secretKey
         })
+        console.log("admin")
       });
 
       const data = await response.json();
@@ -290,3 +291,4 @@ const AdminRegistrationForm = ({ onSuccess }) => {
 
 
 export default AdminRegistrationForm;
+
